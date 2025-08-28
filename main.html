@@ -6,6 +6,14 @@
     Enter your name: <input type="text" id="fname">
 	
 	<script type="text/javascript" src="./script.js">
+		function toUpperCaseField() {
+			let input = document.getElementById("fname");
+		    input.value = input.value.toUpperCase();
+		}
+
+		document.getElemntById("fname").addEventListener("blur", toUpperCaseField);
+		
+		
 	</script>
   </body>
 </html>
